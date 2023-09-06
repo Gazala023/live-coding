@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create multiple select</title>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body style="background: lightblue;">
+    <div style="width: 500px; padding: 15px; margin: 200px auto;">
+        <div class="form-group">
+            <h1>How to create Multiple Select</h1>
+            <label>Course Package</label>
+            <select id="paket" name="paket" class="form-control" multiple="multiple">
+                <option value="Front End">Front End</option>
+                <option value="Back End">Back End</option>
+                <option value="UI/UX">UI/UX</option>
+                <option value="Mobile Developer">Mobile Developer</option>
+                <option value="Software Engineer">Software Engineer</option>
+                <option value="Quality Assurance Engineer">Quality Assurance Engineer</option>
+
+            </select>
+
+
+        </div>
+
+    </div>
+    
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $("#paket").select2({
+                placeholder: "Silahkan Pilih"
+            });
+        });
+    </script>
+
+    
+  </body>
+</html>
